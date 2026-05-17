@@ -1,0 +1,4 @@
+def sandwiches(*ingredients):
+    print(ingredients)
+sandwiches('salami','celery','onions')
+sandwiches('nothing')

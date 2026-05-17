@@ -1,0 +1,7 @@
+def make_car (manuf,mode,**car_details):
+    car_details['manufacturer']=manuf
+    car_details['model']=mode
+    return car_details
+
+car=make_car('subaru','outback',color='blue',tow_package=True)
+print(car)

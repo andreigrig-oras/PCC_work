@@ -1,0 +1,1 @@
+print('Someone said "blabla", ',"isn't that amazing?")
