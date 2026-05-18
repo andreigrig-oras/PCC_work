@@ -16,18 +16,30 @@ class Restaurant:
     def increment_number_served (self, additional_number):
         self.number_served+=additional_number
 
-my_restaurant = Restaurant ('Sejour','Indian')
+class IceCreamStand (Restaurant):
+    def __init__(self,restaurant_name, cuisine_type):
+        super().__init__(restaurant_name,cuisine_type)
+        self.flavors = ""
+    def display_flavors (self):
+        print(f"The ice cream stand's flavors are as follows: {self.flavors}\n")
 
-print(f"My restaurant has served {my_restaurant.number_served} people")
+my_shop = IceCreamStand ("Ice Cube", "ice cream")
+my_shop.flavors="vanilla, chocolate and pistachio"
 
-my_restaurant.number_served = 45
-print(f"My restaurant has served {my_restaurant.number_served} people")
+my_shop.display_flavors()
 
-my_restaurant.set_number_served (35)
-print(f"My restaurant has served {my_restaurant.number_served} people")
+#my_restaurant = Restaurant ('Sejour','Indian')
 
-my_restaurant.increment_number_served (200)
-print(f"My restaurant has served {my_restaurant.number_served} people")
+#print(f"My restaurant has served {my_restaurant.number_served} people")
+
+#my_restaurant.number_served = 45
+#print(f"My restaurant has served {my_restaurant.number_served} people")
+
+#my_restaurant.set_number_served (35)
+#print(f"My restaurant has served {my_restaurant.number_served} people")
+
+#my_restaurant.increment_number_served (200)
+#print(f"My restaurant has served {my_restaurant.number_served} people")
 
 
 
