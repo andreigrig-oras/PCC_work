@@ -23,10 +23,10 @@ class IceCreamStand (Restaurant):
     def display_flavors (self):
         print(f"The ice cream stand's flavors are as follows: {self.flavors}\n")
 
-my_shop = IceCreamStand ("Ice Cube", "ice cream")
-my_shop.flavors="vanilla, chocolate and pistachio"
+#my_shop = IceCreamStand ("Ice Cube", "ice cream")
+#my_shop.flavors="vanilla, chocolate and pistachio"
 
-my_shop.display_flavors()
+#my_shop.display_flavors()
 
 #my_restaurant = Restaurant ('Sejour','Indian')
 
