@@ -1,0 +1,3 @@
+In Python you can build apps.
+In Python you can make games.
+In Python you can find out if your birthday is included in the first million digits of pi.
