@@ -3,14 +3,11 @@ import requests
 # import json
 
 url="https://api.github.com/search/repositories"
-url+="?q=language:python+sort:stars+stars:>10000"
+url+="?q=language:c+++sort:stars+stars:>10000"
 
 headers = {"Accept":"application/vnd.github.v3+json"}
 r=requests.get(url, headers=headers)
-def return_status(link):
-    return (f"Status code: {link.status_code}")
-
-print(return_status(r))
+print (f"Status code: {r.status_code}")
 
 response_dict=r.json()
 
